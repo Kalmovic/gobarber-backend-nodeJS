@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "queue": "nodemon src/queue.js"
+    "queue": "nodemon src/queue.js",
+    "debug": "nodemon --inspect src/server.js"
   },
   "dependencies": {
     "@sentry/node": "5.5.0",
@@ -29,6 +30,7 @@
     "yup": "^0.27.0"
   },
   "devDependencies": {
+    "babel-register": "^6.26.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-config-prettier": "^6.0.0",
